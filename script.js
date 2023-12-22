@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Update description content
     function updateDescription() {
-      const shortDescription = `Description for Media ${currentIndex + 1}:\n${shortDescriptions[currentIndex]}`;
-      const fullDescription = `Extended description for Media ${currentIndex + 1}:\n${fullDescriptions[currentIndex]}`;
+      const shortDescription = `${shortDescriptions[currentIndex]}`;
+      const fullDescription = `${fullDescriptions[currentIndex]}`;
   
       galleryText.textContent = isFullDescription ? fullDescription : shortDescription;
       readMoreButton.textContent = isFullDescription ? "Read Less" : "Read More...";
