@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const fullDescription = `${fullDescriptions[currentIndex]}`;
   
       galleryText.textContent = isFullDescription ? fullDescription : shortDescription;
-      if (galleryText.textContent = "undefined") {
+      if (galleryText.textContent === "undefined") {
           galleryText.textContent = ""
           readMoreButton.display = none
       } else {
