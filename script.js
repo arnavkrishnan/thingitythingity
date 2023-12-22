@@ -43,8 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
       galleryText.textContent = isFullDescription ? fullDescription : shortDescription;
       if (galleryText.textContent = "undefined") {
           galleryText.textContent = ""
+          readMoreButton.display = none
+      } else {
+          readMoreButton.textContent = isFullDescription ? "Read Less" : "Read More..."
+          readMoreButton.display = block
       }
-      readMoreButton.textContent = isFullDescription ? "Read Less" : "Read More...";
     }
   
     // Toggle between short and full descriptions
